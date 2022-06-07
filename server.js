@@ -43,6 +43,6 @@ app.get('/api/:breed', (req, res) =>{
 
 
 
-app.listen(PORT, () =>{
+app.listen(process.env.PORT || PORT, () =>{
     console.log(`Live on port ${PORT}! Better go catch it!`)
 })
